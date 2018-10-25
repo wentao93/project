@@ -1,0 +1,220 @@
+/*重置项目默认样式*/
+body,div,ol,ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,a,i,em,img,span,input,button{ margin:0; padding:0; }
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0; padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+} 
+html{ color:#000;overflow-y:scroll; font-family: "PingFang SC", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", STHeiTi, sans-serif;}
+ol,ul,li{ list-style:none; }
+a{ text-decoration: none; color:#333; }
+a:hover{ color:#f43636; }
+em{ font-style:normal; }
+
+.clearfix::after{ content: ''; display: block; clear:both; }
+
+/*箭头*/
+.arrowdown{
+	display: inline-block;
+	position:relative;
+	top:-2px;
+	width:12px; height:7px;
+	background: url(../imags/jt.png) no-repeat;
+}
+
+/*广告位图标*/
+.ad_tpl_dsp_icon{
+		position: absolute;
+		top:0; right:0;
+		padding: 2px 5px 2px 15px;
+		background:#4b5e8b;
+		font-size:12px;
+	    opacity: .8;
+    	line-height: 1;
+    	max-width: 20px;
+	    box-sizing: border-box;
+   		border-bottom-left-radius: 10px;
+	}
+	.ad_tpl_dsp_icon::before{
+	    content: "";
+	    position: absolute;
+	    width: 10px;
+	    height: 10px;
+	    background: url(../imags/下载.png) no-repeat;
+	    top: 3px;
+	    left: 7px;
+	}
+	.ad_tpl_dsp_icon strong{
+		display: inline-block;
+		margin-left: 8px;
+		line-height: 1;
+	}
+	.ad_tplicon{ 
+	    position: absolute;
+	    right: 3px; bottom: 3px;
+	    width: 34px; height: 20px;
+	    background: url(../imags/monkey.png) no-repeat;
+	    z-index: 1;
+	}
+
+/*tab 特卖标图*/
+.specialSale{
+	position: absolute;
+	display: inline-block;
+	margin-left: 5px; padding:2px 3px;
+	color:#fff; background:#ff9600;
+	line-height: 1; font-size:12px;
+	text-align: center; border-radius:2px;
+}
+
+/*广告盒*/
+.advbox{
+	height:36px; line-height: 36px;
+	text-align: center;
+	border:1px solid #f4cbcb;
+	box-sizing: border-box;
+	position: relative;
+}
+.advbox a{ color:#f43636; }
+.advbox em{
+	position: absolute; top:4px; right:3px;
+	font-size:12px; color:#dcdcdc;
+	width:16px; height:27px; 
+	line-height: 12px;
+	border:1px solid #dcdcdc; 
+	box-sizing:border-box;
+	text-align: center;
+	padding:1px 0;
+}
+/*主新闻列表*/
+.ui_list.pt8{ padding-top: 8px; }
+.ui_list.pb8{ padding-top: 0; margin-bottom: 8px; position:relative; }
+	.ui_list li{ height:36px; white-space: nowrap; font-size: 0; }
+	.ui_list li a:first-child{ padding-left: 0; }
+	.ui_list li a{
+		display: inline-block;
+		line-height: 36px;
+		padding: 0 8px; font-size: 16px;
+		position: relative;
+	}
+	.ui_list li a+a:before{
+		content: '';
+		position: absolute;
+		top:50%; left: 0;
+		height:16px; margin-top: -8px;
+		border-left: 1px solid #ccc;
+	}
+	.ui_list li a.red{ color:#f43636; }
+	.ui_list li a i{
+		display: inline-block;
+		width:20px; height:21px;
+		background:url(../imags/film.png) no-repeat;
+		margin-right: 4px;
+		position: relative;
+		top:5px;
+	}
+
+/*主题顶部*/
+.title{ position: relative; overflow: hidden;}
+.title a:hover{ color:#f43636; }
+	.title_name{
+		float: left; font-size:0; margin-right: 30px;
+		font-weight:700; padding: 5px 0; line-height: 1.5;
+		box-sizing: border-box;
+	}
+	.title_name a{ font-size: 20px; }
+	.title_name:before{
+		float: left; content: '';
+		position: relative; top:5px;
+		width:6px; height:20px;
+		margin-right: 10px; background: #ddd;
+		vertical-align: top;
+	}
+	
+	.title_more{ position: absolute; top:0; right:0; line-height: 40px; }
+	.title_more a{ float:left;  padding-left: 18px; position: relative;}
+	.title_more a:first-child{ padding-left: 0; }
+
+
+/*轮播图按钮*/
+.btn{
+	position: absolute; margin-top: -32px;
+	top:50%; width:30px; height:64px; line-height: 64px;
+	background:rgba(0,0,0,0.6);
+	color:#fff; font-size: 40px;
+	text-align: center; z-index: 2;
+}
+	 .btn_prev{ left: 0; border-radius: 0 5px 5px 0; }
+	 .btn_next{right: 0; border-radius: 5px 0 0 5px; }
+	 .btn:hover{ background: #386ed3; color: #fff; }
+
+.slide_btn{ font-size: 0; text-align: center; z-index: 9999;}
+	 .slide_btn a{
+		display: inline-block;
+		width:10px; height:10px;
+		margin:6px; border-radius:5px;
+		background:#ccc; border:1px solid #c9c9c9;
+		box-sizing: border-box;
+	}
+	 .slide_btn a.active{ 
+		width:30px; 
+		background: #386ed3;
+		border-color: #386ed3;
+	}
+
+/*线*/
+.line:before{
+    content: '';
+    position: absolute;
+    top: 50%; left: 9px; height: 16px;
+    margin-top: -8px; border-left: 1px solid #ccc;
+}
+/*实心圆*/
+.disc:before{
+	content: ''; position: absolute;
+	top:50%; left:9px; margin-top: -3px;
+	width:5px; height:5px; border-radius:50%;
+	background: #d0d0d0; 
+}
+
+.pic .pic_text{
+	position: absolute; left:0; right:0; bottom:0;
+	padding:6px 0; text-align: center; color:#fff;
+	line-height: 1.5; font-size:14px;
+	white-space:nowrap; text-overflow: ellipsis; overflow: hidden;
+	background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8)80%, rgba(0,0,0,0.8)100%);
+}
+
+.red{ color:#f43636; }
+
+/*车商城/深圳二手车左侧*/
+.condition_item+.condition_item{ margin-top: 12px; }
+	.item_tit{
+		height:28px; line-height: 28px; font-size: 16px; 
+	}
+	.item_tit span{ font-weight:600; }
+	.item_tit a{ float:right; }
+	.item_img{ font-size: 0; }
+	.item_img a{  display: inline-block;  padding:6px; }
+	.item_img a img{ display: inline-block; width:50px; height:50px; }
+
+	.item_cont{ font-size:0; }
+	.item_cont a{
+		display: inline-block; font-size:16px;
+		line-height: 36px; margin-right: 15px;
+	}
+.scaleimg img{  display: inline-block;  width:200px; height:150px; }
+.slideimg{ position: relative; overflow: hidden; }
+.slide_inner{ position: absolute; top:0; left: 0; }
+
+.container{ width:1200px; margin:0 auto; }
+.mb5{ margin-bottom: 5px; }
+.mb10{ margin-bottom: 10px; }
+.mt5{ margin-top:5px; }
+.mt10{ margin-top:10px; }
+.mt15{ margin-top:15px; }
+.mt20{ margin-top:20px; }
+.mt30{ margin-top: 30px; }
+.ml10{ margin-left: 10px; }
+.pt10{ padding-top: 10px; }

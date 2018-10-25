@@ -1,0 +1,350 @@
+/*放页面注册样式*/
+body{ background:url(../images/reg_repeat_bg.png); }
+
+.W_nologin .W_header_line{
+	height:3px;
+	border-bottom:1px solid #e6f1f9; 
+	background:url(../images/top_line_bg.png) no-repeat;
+}
+.clearfix{ content: ''; display: block; clear: both; }
+/*页眉*/
+.W_reg_header{
+	width:900px; height:164px;
+	padding:10px 0;
+	margin: 0 auto;
+	background:url(../images/bg_reg_wave.png) no-repeat;
+}
+	.W_reg_header .W_nologin_logo_big{
+		width:200px; height:72px;
+		margin:26px auto 0;
+		background: url(../images/logo_big.png) no-repeat;
+	}
+
+/*注册内容*/
+.W_nologin_main{
+	width:900px;
+	margin:0 auto 15px;
+	background:#fff;
+	border-radius:6px;
+	box-shadow: 0px 2px 3px #98b4c4;
+}
+.clearfix::after{ content:''; display:block; clear:both; }
+
+/*tab*/
+.W_nologin_main .main_tab_line{ padding: 24px 0 22px 40px; }
+	.W_nologin_main .main_tab_line a{
+		display: inline-block;
+		font-size:22px;
+		color:#333;
+		line-height: 33px;
+	}
+	.W_nologin_main .main_tab_line a.cur{ border-bottom:3px solid #ffa00a; }
+	.W_nologin_main .main_tab_line span{ margin:0 18px; color:#999; }
+
+/*tab 内容*/
+/*个人注册*/
+.W_reg_info{
+		background:url(../images/reg_vline.png) no-repeat;
+		background-position: 630px -45px;
+	}
+
+	.W_reg_form{
+		float:left;
+    	width: 600px; 
+    	margin:29px 0 0 20px;
+    	padding-bottom:78px;
+    	background: #fff;
+	}
+	.info_list{
+		margin-bottom: 15px;
+		position: relative;
+	}
+
+	.tit{
+		float:left;
+		width:160px;
+		line-height: 30px;
+		font-size:14px;
+		text-align: right;
+	}
+	.tit .mobile_ico{
+		display:inline-block;
+		width: 20px;
+		height:23px;
+		background:url(../images/reg_method_s.png) no-repeat;
+		background-position:0 -24px;
+		vertical-align:middle;
+		margin-right: 6px;
+	}
+	.tit i{ 
+		color:#f00; 
+		font-weight:600;
+		padding-right: 4px;
+	}
+
+	.inp{ margin-left: 160px; overflow: hidden;}
+	.inp .flag_tel{ overflow: hidden; }
+	.inp .flag_tel a{
+	    float: left;
+	    padding: 8px 4px;
+	    width: 27px;
+	    height: 12px;
+	    border: 1px solid #ccc;
+	    background:url(../images/reg_flag.png) no-repeat;
+	    background-position:4px 8px;
+	}
+	.inp .flag_tel .W_input{
+	    float: left;
+		width: 157px;
+		height:28px;
+		padding-left: 5px;
+		position: relative;
+		left: -1px;
+	    border: 1px solid #ccc;
+	 	border-radius: 2px;
+	}
+	.inp .W_input span{
+		float: left;
+		line-height:28px;
+		margin-right: 5px;
+		background: #fff;
+		color:#808080;
+		font-size:14px;
+	}
+	.inp .W_input .tel_num{
+		float:left;
+		width:112px;
+		line-height: 28px;
+		border:none;
+		background: #faffbd;
+		font-size:14px;
+	}
+	.inp .mailbox,
+	.inp.active .attachment{ padding-top: 7px; font-size:12px; }
+	.inp .mailbox a,
+	.inp.active .attachment a{ color:#0a8cd2; }
+	.inp .mailbox a:hover{ text-decoration:underline; }
+	
+	.error{
+		position:absolute;
+		top:6px; left:375px;
+		font-size:12px;
+		color:#e64141;
+		padding-left: 20px;
+		line-height: 18px;
+	}
+	.error .icon_rederrorS{
+		position: absolute;
+		left:1px; top:2px;
+		width:16px;
+		height: 16px;
+		text-indent: -20px;
+		background: url(../images/ico_warn.png) no-repeat;
+		background-position: 0 -250px ;
+	}
+
+	.inp .W_input.pass{
+		display: inline-block;
+		width: 196px;
+		height:28px;
+		padding-left: 2px;
+		position: relative;
+	    border: 1px solid #ccc;
+	 	border-radius: 2px;
+	 	background: #faffbd;
+	}
+
+	.inp.active .W_btn_e{
+		display: inline-block;
+		width:120px;
+		font-size:12px;
+		height:28px;
+		line-height: 25px;
+	 	border-style: solid;
+		border-width:1px ;
+		border:1px solid #d9d9d9;
+		padding-right: 2px;
+		text-align:center;
+		border-radius:2px;
+		color:#333;
+    	background-color: #f2f2f2;
+    	vertical-align: middle;
+	}
+	.inp.active .W_btn_e:hover{
+		color:#fff;
+		background: #ffa71d;
+	}
+	.inp.active .W_input{
+		display: inline-block;
+		width:62px;
+		height:28px;
+		padding-left: 2px;
+		margin-left: 5px;
+		border:1px solid #ccc;
+		background: #fff;
+		vertical-align: middle;
+	}
+	.inp.active .attachment{
+		padding-top: 7px;
+		font-size:12px;
+	}
+	.inp.active .attachment a:hover{ text-decoration:underline; }
+	
+	.info_submit{ margin:30px 0 12px; }
+	.info_submit a{ 
+		display: inline-block; 
+		border:1px solid #ff9b01; 
+		border-radius:2px; 
+		margin-left:160px;
+	}
+	.info_submit a span{
+		display: inline-block;
+		width:196px;
+		height:18px; line-height: 18px;
+		padding:10px 0 8px;
+		border:1px solid #ffb33b;
+		background: #FFA00A;
+		color:#fff;
+		text-align: center;
+		font-size:16px;
+		font-weight:bold;
+	}
+	.info_list .agreement{
+		font-size:12px;
+		height:14px;
+		margin-bottom: 7px;
+	}
+	.info_list .agreement a{ color:#0a8cd2; }
+	.info_list .agreement a:hover{ text-decoration:underline; }
+
+/*官方注册*/
+.W_reg_form .no_sina_area_tips{
+	position:relative;
+	top:-25px;
+	padding:0 0 10px 20px;
+	line-height: 20px;
+	color:#333;
+	font-size:12px;
+}
+ 	.W_reg_form .no_sina_area_tips li a{ color:#0a8cd2; }
+ 	.W_reg_form .no_sina_area_tips li a:hover{ text-decoration:underline; }
+/*注册帮助*/
+.W_reg_sidebar{
+	float:right;
+	width:210px;
+	font-size:14px;
+	line-height: 22px;
+	margin:30px 30px 0 0;
+	background: #fff;
+}
+.W_reg_sidebar a{ color:#0a8cd2; }
+.W_reg_sidebar a:hover{ text-decoration:underline; }
+	.W_reg_sidebar .line{
+		padding:0 0 6px;
+		margin-bottom: 14px;
+		border-bottom:1px dotted #ccc;
+	}
+	
+	.W_reg_sidebar .reg-help{ margin-top: 10px; font-size:12px; }
+	
+	.W_reg_sidebar .reg-help li{ margin-top: 5px; overflow:hidden; }
+	.W_reg_sidebar .reg-help li i{
+		float: left;
+		width:15px; height:18px;
+		line-height: 15px;
+		margin:4px 10px 0 0;
+		text-align:center;
+		color:#fff;
+		background:url(../images/bg_listNum.png) no-repeat;
+		font-style:normal;
+	}
+	.W_reg_sidebar .reg-help li a{
+		float:left;
+		width:175px;
+		overflow:hidden;
+	}
+	.W_reg_sidebar .reg-help .help_more{
+		display: inline-block;
+		margin:16px 0 0 25px;
+	}
+	
+/*页脚*/
+.nologin_footer{ 
+	width:900px;
+	margin:auto;
+	font-size:12px;
+	color:#6e9ab8;
+}
+	
+	.nologin_footer .left_link{ float:left; }
+	.nologin_footer .left_link .footer_logo{
+		display: inline-block;
+		width:26px; height:16px;
+		background:url(../images/reg_ico.png) no-repeat;
+		position: relative;
+		top:4px;
+	}
+	.nologin_footer .left_link em{
+		font-style:normal;
+		margin-right:10px;
+	}
+	.nologin_footer .left_link a{ color:#6e9ab8; }
+
+
+	.nologin_footer .copy{ float:right; line-height: 21px;}
+	.nologin_footer .copy select{ float: right; margin-left: 10px; }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

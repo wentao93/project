@@ -1,0 +1,101 @@
+
+.conent{
+	width:800px;
+	box-shadow: 0 0 30px #ccc;
+	margin:20px auto; padding:20px;
+}
+.title{ height:135px; }
+	.title .introduce{
+		float:left; width:460px;
+		cursor: default;
+	}
+	.title .introduce span{ display: block; padding-left: 20px; }
+	.title .introduce span+span{
+	 	height:30px; line-height: 35px; 
+	 	font-size:14px; color:#333;
+	}
+	.title .introduce .name{
+		height:40px; line-height: 36px;
+		font-size:30px;
+		background: #2e73b4; color:#fff;
+	}
+	.title .introduce .contact,
+	.title .introduce .mailbox{ border-bottom:1px dashed #2e73b4; }
+	.title .introduce .post{
+		font-weight: bold;
+		border-bottom:3px solid #2e73b4;
+	}
+
+	.title .icon{
+		float:right;
+		width:90px; height:125px;
+		margin-right: 20px;
+		box-shadow: 10px 10px 10px #9d9d9d;
+	}
+	.title .icon img{ width:100%; height:100%; }
+
+.main{ 
+	padding-top: 8px;
+	margin-top: 25px;
+	border-top:3px solid #2e73b4;
+}
+	.item{ margin-bottom: 20px; }
+	.item .item_tit{
+		height:28px; line-height: 28px;
+		padding-left:20px; position: relative;
+		background:#eee; color:#2970b0;
+		font-size:16px; font-weight: bold;
+	}
+	.item .item_tit:before{
+		content: '';
+		position: absolute; top:0; left:0; bottom:0;
+		border-left:10px solid #2970b0;
+	}
+	.item .school{
+		height:35px; line-height: 35px;
+		padding:0 20px;
+		font-size: 14px; font-weight: bold;
+	}
+	.item .school .fl,
+	.item .school .fr{width:50%; }
+	.item .school .fl span{ float: left; width:50%; }
+	.item .school .fl span+span{ text-align: center; }
+
+	.item .school .fr span{ float:left; width:50%; text-align: right; }
+	.item .cont{ padding:5px 20px 0; }
+	.item .cont+.cont{ padding-top: 20px; }
+	.item .cont .text_top{ height:20px; line-height: 20px; }
+	.item .cont .text_top span{
+		float:left; width:25%;
+		font-size:14px; font-weight: bold;
+	}
+	.item .cont .text{ font-size: 14px; }
+	.item .cont .text li{
+		display: block; line-height: 20px;
+		padding-left: 20px; position: relative;
+	}
+	.item .cont .text li:before{
+		content: '';
+		position: absolute; top:7px; left:0;
+		width:6px; height: 6px;
+		background: #000; border-radius: 50%;
+	}
+	.item .cont .text li .info{ 
+		display:block; height:100%;
+		margin-left: 70px;
+	}
+
+/*footer*/
+.footerwrap{ 
+	width:100%; height:50px; line-height: 50px;
+	margin-top: 40px; 
+	background: #313131; 
+}
+	.footer{ 
+		font-size: 12px; color:#fff;
+		cursor: default;
+	}
+	.footer p{ float:left; }
+	.footer a{  float: right;  font-size:14px; color:#fff; }
+	.footer a:hover{ color:red; }
+

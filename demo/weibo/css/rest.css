@@ -1,0 +1,111 @@
+/*重置项目默认样式*/
+html {
+	overflow-x: hidden;
+	font-family: -apple-system,BlinkSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Helevetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei","Source Han Sans CN",sans-serif
+}
+body,html {
+	height: 100%;
+	overflow: hidden
+}
+body,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,ul,li,ol,p,textarea,th,td,span,img,i,em {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+} 
+ol,ul {	list-style: none; }
+a {
+	text-decoration: none;
+	color: #333;
+	outline: 0;
+}
+
+/*公共样式*/
+
+/*UG_list*/
+.UG_list_b,.UG_list_v2{
+	padding-bottom: 10px;
+}
+.UG_list_b,.UG_list_v2,.UG_list_a{
+	margin-bottom: 10px;
+	border-bottom:1px solid #e5e5e5;
+	cursor:pointer;
+	overflow: hidden;
+}
+/*piccut_v*/
+.piccut_v{
+	float:left;
+	width:158px;
+	height:102px;
+	background: #ddd;
+    position: relative;
+    overflow: hidden;
+}
+/*subinfo_box*/
+.list_des .list_title_s{
+		line-height: 24px;
+		font-size:14px;
+		display: -webkit-box;
+    	-webkit-box-orient: vertical;
+		overflow: hidden;
+    	text-overflow: ellipsis;
+    	color:#333;
+	}
+	.list_des .list_title_s a{ color:#eb7350; }
+	.list_des .subinfo_box{
+		height:20px;
+		line-height: 20px;
+		font-size:12px;
+		margin-top:10px;
+		margin-right: -8px;
+	}
+	.list_des .subinfo_box a,
+	.list_des .subinfo_box .time{ 
+		float:left; 
+		margin-right:12px;
+	}
+	.list_des .subinfo_box a img{
+		float: left;
+		width:20px;
+		height:20px;
+		margin-right: 5px;
+		background: red;
+		border-radius:50%;
+	}
+	.list_des .subinfo_box a,
+	.list_des .subinfo_box span{
+		display: inline-block;
+		height:20px;
+		line-height: 20px;
+		color:#808080;
+	}
+	.list_des .subinfo_box .S_txt2{
+		float:right;
+		padding:0 8px;
+	}
+	.list_des .subinfo_box .S_txt2 em{ font-style:normal; }
+	.list_des .subinfo_box .pic{
+		float:left;
+		margin-right: 5px;
+		width:16px;
+		height:20px;
+		background: url(../image/num-pic.png) no-repeat;
+	}
+	.list_des .subinfo_box .pic2{ background-position:-16px 0; }
+	.list_des .subinfo_box .pic3{ background-position:-32px 0; }
+
+	.list_des .subinfo_box .pic1:hover{ background-position:0 -20px; }
+	.list_des .subinfo_box .pic2:hover{ background-position:-16px -20px; }
+	.list_des .subinfo_box .pic3:hover{ background-position:-32px -20px; }
+
+/*查看更多*/
+.UG_box_more{
+	    height: 33px;
+	    line-height: 33px;
+	    text-align: center;
+	    border-top: 1px solid #d9d9d9;
+	    margin: 40px -20px -20px;
+	}
+	.UG_box_more a{ display: block; font-size:12px;color:#333; }
+	.UG_box_more a:hover{ color:#eb7350; }
+
+

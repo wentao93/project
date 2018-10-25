@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>微博注册</title>
+	<link rel="stylesheet" href="../css/rest.css"/>
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+	<div class="W_nologin">
+		<div class="W_header_line"></div>
+		<div class="W_reg_header">
+			<div class="W_nologin_logo_big"></div>
+		</div>
+		<!-- 注册内容 -->
+		<div class="W_nologin_main clearfix">
+			<div class="main_tab_line">
+				<a class="cur" href="javascript:;">个人注册</a>
+				<span>|</span>
+				<a href="javascript:;">官方注册</a>
+			</div>
+			<div class="W_reg_info clearfix" style="display: none;">
+				<div class="W_reg_form">
+					<div class="info_list clearfix">
+						<div class="tit">
+							<span class="mobile_ico"></span>
+							<i>*</i>手机：
+						</div>
+						<div class="inp">
+							<div class="flag_tel clearfix">
+								<a href="javascript:;"></a>
+								<div class="W_input">
+									<span>0086</span>
+									<input class="tel_num" type="text" placeholder="请输入手机号码" />
+								</div>
+							</div>
+							<div class="mailbox">
+								或使用<a href="javascript:;">邮箱注册</a>
+							</div>
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i> 请输入手机号码
+						</p>
+					</div>
+					<div class="info_list clearfix">
+						<div class="tit">
+							<i>*</i>
+							设置密码：
+						</div>
+						<div class="inp">
+							<input class="W_input pass" type="text"/>
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i>
+							请输入密码
+						</p>
+					</div>
+					<div class="info_list">
+						<div class="tit">
+							<i>*</i>
+							激活码：
+						</div>
+						<div class="inp active">
+							<a class="W_btn_e" href="javascript:;" >免费获取短信激活码</a>
+							<input class="W_input" type="text" />
+							<div class="attachment">
+								<a href="javascript:;">收不到验证码？</a>
+							</div>
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i>
+							请输入短信激活码
+						</p>
+					</div>
+					<div class="info_submit">
+						<a href="javascript:;"><span>立即注册</span></a>
+					</div>
+					<div class="info_list clearfix">
+						<div class="inp">
+							<p class="agreement">
+								<a href="javascript:;">微博服务使用协议</a>
+							</p>
+							<p class="agreement">
+								<a href="javascript:;">微博服务使用协议</a>
+							</p>
+							<p class="agreement">
+								<a href="javascript:;">全国人大常委会关于加强网络信息保护的决定</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="W_reg_sidebar">
+					<p class="line">
+						已有帐号，<a href="javascript:;">直接登录»</a>
+					</p>
+					<p class="reg_help_tit">微博注册帮助</p>
+					<div class="reg-help">
+						<ul>
+							<li>
+								<i>1</i>
+								<a href="javascript:;">微博注册操作指南</a>
+							</li>
+							<li>
+								<i>2</i>
+								<a href="javascript:;">手机注册时提示手机号码已被绑定怎么办?</a>
+							</li>
+							<li>
+								<i>3</i>
+								<a href="javascript:;">注册微博时昵称显示“已经被注册”如何处理?</a>
+							</li>
+							<li>
+								<i>4</i>
+								<a href="javascript:;">注册时提示"你所使用的IP地址异常",该怎么办?</a>
+							</li>
+						</ul>
+						<a class="help_more" href="javascript:;">更多帮助»</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="W_reg_info clearfix">
+				<div class="W_reg_form">
+					<ul class="no_sina_area_tips">
+						<li>官方认证类型包括：政府、企业、媒体、网站、应用、机构、公益、校园组织</li>
+						<li style="color:#E44443;">注意：非官方类用户，请直接在<a href="javascript:;">个人注册</a>处注册</li>
+					</ul>
+					<div class="info_list clearfix">
+						<div class="tit">
+							<span class="mobile_ico"></span>
+							<i>*</i>邮箱：
+						</div>
+						<div class="inp">
+							<input class="W_input" type="text" placeholder="使用邮箱登录" />
+							<div class="mailbox">
+								或使用<a href="javascript:;">手机注册</a>
+							</div>
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i> 请输入常用邮箱
+						</p>
+					</div>
+					<div class="info_list clearfix">
+						<div class="tit">
+							<i>*</i>
+							设置密码：
+						</div>
+						<div class="inp">
+							<input class="W_input pass" type="text"/>
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i>
+							请输入密码
+						</p>
+					</div>
+					<div class="info_list">
+						<div class="tit">
+							<i>*</i>
+							官方注册微博名：
+						</div>
+						<div class="inp active">
+							<input class="W_input" type="text" placeholder="请参考组织/企业/品牌全称" />
+							<!-- <div class="attachment">
+								<a href="javascript:;">收不到验证码？</a>
+							</div> -->
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i>
+							请输入短信激活码
+						</p>
+					</div>
+					<div class="info_list">
+						<div class="tit">
+							<i>*</i>
+							官方注册微博名：
+						</div>
+						<div class="inp active">
+							<input class="W_input" type="text" placeholder="请参考组织/企业/品牌全称" />
+							<!-- <div class="attachment">
+								<a href="javascript:;">收不到验证码？</a>
+							</div> -->
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i>
+							请输入短信激活码
+						</p>
+					</div>
+					<div class="info_list">
+						<div class="tit">
+							<i>*</i>
+							所在地：
+						</div>
+						<div class="inp choose">
+							<select name="" id="">
+								<option value="1">安徽</option>
+								<option value="2">北京</option>
+								<option value="3">重庆</option>
+								<option value="4">福建</option>
+								<option value="5">甘肃</option>
+								<option value="6">广东</option>
+								<option value="7">广西</option>
+								<option value="8">贵州</option>
+								<option value="9">海南</option>
+								<option value="10">河北</option>
+								<option value="11">黑龙江</option>
+								<option value="12">河南</option>
+								<option value="13">湖北</option>
+								<option value="14">湖南</option>
+								<option value="15">内蒙古</option>
+								<option value="16">江苏</option>
+								<option value="17">江西</option>
+								<option value="18">吉林</option>
+								<option value="19">辽宁</option>
+								<option value="20">宁夏</option>
+								<option value="21">青海</option>
+								<option value="22">山西</option>
+								<option value="23">山东</option>
+								<option value="24">上海</option>
+								<option value="25">四川</option>
+								<option value="26">天津</option>
+								<option value="27">西藏</option>
+								<option value="28">新疆</option>
+								<option value="29">云南</option>
+								<option value="30">浙江</option>
+								<option value="31">陕西</option>
+								<option value="32">台湾地区</option>
+								<option value="33">香港地区</option>
+								<option value="34">澳门地区</option>
+								<option value="35">海外</option>
+								<option value="35">其他</option>
+							</select>
+							<select name="" id="">
+								<option value="1">广州</option>
+								<option value="2">韶关</option>
+								<option value="3">深圳</option>
+								<option value="4">珠海</option>
+								<option value="5">汕头</option>
+								<option value="6">佛山</option>
+								<option value="7">江门</option>
+								<option value="8">湛江</option>
+								<option value="9">茂名</option>
+								<option value="10">肇庆</option>
+								<option value="11">惠州</option>
+								<option value="12">梅州</option>
+								<option value="13">汕尾</option>
+								<option value="14">河源</option>
+								<option value="15">阳江</option>
+								<option value="16">清远</option>
+								<option value="17">东莞</option>
+								<option value="18">中山</option>
+								<option value="19">潮州</option>
+								<option value="20">揭阳</option>
+								<option value="21">云浮</option>
+							</select>
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i>
+							请输入短信激活码
+						</p>
+					</div>
+					<div class="info_list">
+						<div class="tit">
+							<i>*</i>
+							验证码：
+						</div>
+						<div class="inp active">
+							<input class="W_input" type="text" />
+							<!-- <div class="attachment">
+								<a href="javascript:;">收不到验证码？</a>
+							</div> -->
+						</div>
+						<p class="error">
+							<i class="icon_rederrorS"></i>
+							请输入短信激活码
+						</p>
+					</div>
+					<div class="info_submit">
+						<a href="javascript:;"><span>立即注册</span></a>
+					</div>
+					<div class="info_list clearfix">
+						<div class="inp">
+							<p class="agreement">
+								<a href="javascript:;">微博服务使用协议</a>
+							</p>
+							<p class="agreement">
+								<a href="javascript:;">微博服务使用协议</a>
+							</p>
+							<p class="agreement">
+								<a href="javascript:;">全国人大常委会关于加强网络信息保护的决定</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="W_reg_sidebar">
+					<p class="line">
+						已有帐号，<a href="javascript:;">直接登录»</a>
+					</p>
+					<p class="reg_help_tit">微博注册帮助</p>
+					<div class="reg-help">
+						<ul>
+							<li>
+								<i>1</i>
+								<a href="javascript:;">微博注册操作指南</a>
+							</li>
+							<li>
+								<i>2</i>
+								<a href="javascript:;">手机注册时提示手机号码已被绑定怎么办?</a>
+							</li>
+							<li>
+								<i>3</i>
+								<a href="javascript:;">注册微博时昵称显示“已经被注册”如何处理?</a>
+							</li>
+							<li>
+								<i>4</i>
+								<a href="javascript:;">注册时提示"你所使用的IP地址异常",该怎么办?</a>
+							</li>
+						</ul>
+						<a class="help_more" href="javascript:;">更多帮助»</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--注册登录footer-->
+		<div class="nologin_footer clearfix">
+			<div class="left_link">
+				<i class="footer_logo"></i>
+				<em>北京微梦创科网络技术有限公司</em>
+				<a href="javascript:;">京网文[2017]10291-1172号</a>
+				<a href="javascript:;">京ICP备12002058号</a>
+			</div>
+			<div class="copy">
+				<span>Copyright © 2009-2018 WEIBO</span>
+				<select name="" id="" style="line-height: 18px;">
+					<option value="">中文(简体)</option>
+					<option value="">中文(臺灣)</option>
+					<option value="">中文(香港)</option>
+					<option value="">English</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

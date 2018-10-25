@@ -1,0 +1,93 @@
+/*主要css样式*/
+
+
+/*main*/
+.main{ padding-top: 40px; }
+	.item{ float:left; }
+	/*top*/
+	.title{ height:96px; text-align: center; cursor: default; }
+	.title h2{
+		height:56px; line-height: 56px;
+		font-size: 36px; font-weight: 400;
+	}
+	.title .title_info{ margin-top: 10px; font-size: 0; }
+	.title .title_info span{
+		height:30px; line-height: 30px;
+		font-size: 16px; color: #999;
+	}
+	.title .title_info span+span{ margin-left: 20px; }
+	
+	/*tab*/
+	.classify_tab{ 
+		position: relative;
+		line-height: 30px;
+		margin-top: 33px; 
+		text-align: center;
+	}
+	.classify_tab ul{ font-size: 0; height: 30px; }
+	.classify_tab li{
+		display: inline-block;
+		font-size:14px;
+		margin: 0 20px;
+		cursor: pointer;
+		position: relative;
+	}
+	.classify_tab li.active{ color: #f66; }
+	.classify_tab li.active:after{
+		content: '';
+		position: absolute;
+		left:0; right:0; bottom:0;
+		border-bottom: 2px solid #f66;
+	}
+
+	/*tab content*/
+	.tab_list{ padding-top: 20px;  }
+	.tab_list li{
+		float:left;
+		width:218px; padding:0 15px;
+		border:1px solid #ddd;
+		background: #fff;
+		margin: 0 0 30px 30px;
+	}
+	.tab_list li:nth-child(4n+1){ margin-left: 0; }
+	.tab_list li:hover{
+		background: #fff;
+		box-shadow: 0 0 15px #ccc;
+		cursor: pointer;
+	}
+	.tab_list li .name{
+		padding:10px 0;
+		font-size: 14px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		border-bottom: 1px solid #ddd;
+	}
+	.tab_list li .pic{
+		width:220px; height:250px;
+		padding:15px 0; overflow: hidden;
+	}
+	.tab_list li .pic img{ width:100%; height:100%; }
+	.tab_list li .info{  
+		padding:10px 0;
+		overflow: hidden; 
+		border-top:1px solid #ddd;
+		/*background: #ccc;*/
+	}
+	.tab_list li .info .btn{
+		float: right;
+		width:80px; height:30px; line-height: 30px;
+		font-size:14px; text-align: center;
+		border-radius:3px;
+		background: #5bc0de; color:#fff;
+	}
+	.tab_list li .info .btn:hover{ background: #36b8da; }
+	
+	
+
+
+
+
+
+
+

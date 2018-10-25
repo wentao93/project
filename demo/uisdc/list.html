@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小数列表</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		.main{ height:100%; }
+		.main .top{ padding:40px 0; text-align: center; }
+		.main .top h2{ line-height: 36px; color:#f50; font-size:28px; margin-bottom: 20px; }
+		.main .top h4{ font-size:14px; color:#888; font-weight: 400; }
+
+		.main .top h4:before{
+			content: '';
+			display: inline-block;
+			width:20px; height:0;
+			margin: 0 10px;
+			border-top:1px solid #e1e1e1;
+			vertical-align: middle;
+		}
+		.main .top h4:after{
+			content: '';
+			display: inline-block;
+			width:20px; height:0;
+			margin: 0 10px;
+			border-top:1px solid #e1e1e1;
+			vertical-align: middle;
+		}
+		
+		.middle{ width:885px; margin-left: 285px; }
+		.middle .item{
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+			border-bottom:1px solid #ddd;
+		}
+		.middle .item h4{ line-height: 25px; overflow: hidden; color:#d1d1d1; }
+		.middle .item h4 a{ 
+			float:left; width: 450px; color:#0da4d3; font-size: 16px; 
+			text-overflow: ellipsis; overflow: hidden; white-space: nowrap;
+		}
+		.middle .item h4 a:hover{ text-decoration: underline; }
+		.middle .item h4 span{ float:left; width:100px; font-size:14px; }
+		.middle .item h4 .newest{ 
+			float:right; width:200px; 
+			font-size:14px; color: #777; 
+		}
+		.middle .item .text{ 
+			line-height: 1.5; font-size:14px; 
+			padding:10px 0; text-indent:2em;  
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 顶部导航 -->
+		<div class="top-nav">
+			<div class="auto">
+				<div class="logo">
+					<a href="javascript:;">
+						<img src="img/uisdc-logo.png" alt="优设网">
+					</a>
+				</div>
+				<div class="menu" id="nav">
+					<ul>
+						<li class="nav-list">
+							<a class="link" href="index.html">
+								<span>首页</span>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="link bor current" href="javascript:;">
+								<span>文章</span>
+							</a>
+							<div class="sub-nav article-down" >
+								<div class="menus">
+									<div class="row">
+										<div class="dropdown-item">
+											<a href="javascript:;">
+												<i class="pic1"></i>
+												<h3>全部文章</h3>
+												<p>8145 篇</p>
+											</a>
+										</div>
+										<div class="dropdown-item">
+											<a href="javascript:;">
+												<i class="pic2"></i>
+												<h3>热门下载</h3>
+												<p>596 篇</p>
+											</a>
+										</div>
+										<div class="dropdown-item">
+											<a href="javascript:;">
+												<i class="pic3"></i>
+												<h3>界面设计</h3>
+												<p>489 篇</p>
+											</a>
+										</div>
+										<div class="dropdown-item">
+											<a href="javascript:;">
+												<i class="pic4"></i>
+												<h3>设计文章 & 教程</h3>
+												<p>5074 篇</p>
+											</a>
+										</div>
+										<div class="dropdown-item">
+											<a href="javascript:;">
+												<i class="pic5"></i>
+												<h3>优设专题</h3>
+												<p>34 篇</p>
+											</a>
+										</div>
+										<div class="dropdown-item">
+											<a href="javascript:;">
+												<i class="pic6"></i>
+												<h3>职场 & 规划</h3>
+												<p>657 篇</p>
+											</a>
+										</div>
+										<div class="dropdown-item">
+											<a href="javascript:;">
+												<i class="pic7"></i>
+												<h3>酷站推荐</h3>
+												<p>1139 篇</p>
+											</a>
+										</div>
+										<div class="dropdown-item">
+											<a href="javascript:;">
+												<i class="pic8"></i>
+												<h3>行业新闻</h3>
+												<p>29 篇</p>
+											</a>
+										</div>
+									</div>
+									<div class="wire-cut"></div>
+									<div class="posts">
+										<h3>
+											<i></i>
+											上周热门文章
+										</h3>
+										<ul id="posts-list">
+											<li>
+												<a href="javascript:;">
+													<i>1</i>
+													<strong>29 岁成为阿里巴巴 P8，工作 5 年完成晋升 3 连跳，这位设计师如何做到？</strong>
+													<span>32198</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<i>2</i>
+													<strong>多达300套背景纹理免费素材，小编帮你精选好了…</strong>
+													<span>30806</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<i>3</i>
+													<strong>用错图片赔到破产？真实测评教你哪些图库网站最划算！</strong>
+													<span>30522</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<i>4</i>
+													<strong>这篇字体设计教程，可能让你少赔几万</strong>
+													<span>28002</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<i>5</i>
+													<strong>Adobe XD免费中文版发布，优设独家专访Adobe 设计副总裁</strong>
+													<span>22520</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<i>6</i>
+													<strong>想紧跟流行风尚？这5种平面设计趋势了解一下</strong>
+													<span>21874</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<i>7</i>
+													<strong>腾讯最新设计神器，可以一键智能生成H5！</strong>
+													<span>21874</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;">
+													<i>8</i>
+													<strong>腾讯最新设计神器，可以一键智能生成H5！</strong>
+													<span>20436</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="hot-topic">
+									<strong>热门专题</strong>
+									<div class="ify">
+										<a href="javascript:;">中文字体</a>
+										<a href="javascript:;">免费资源</a>
+										<a href="javascript:;">Material Design</a>
+										<a href="javascript:;">后期修图</a>
+										<a href="javascript:;">自学手绘</a>
+										<a href="javascript:;">免费图库</a>
+										<a href="javascript:;">PPT设计</a>
+										<a href="javascript:;">字体设计</a>
+										<a href="javascript:;">图标设计</a>
+										<a href="javascript:;">英文字体</a>
+										<a href="javascript:;">LOGO设计</a>
+										<a href="javascript:;">设计师专访</a>
+										<a href="javascript:;">平面设计</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-list">
+							<a class="link" href="../javascript:;">
+								<span>网址导航</span>
+								<i></i>
+							</a>
+							<ul class="sub-nav wei1">
+								<li>
+									<a href="javascript:;">
+										<span>设计导航</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>图书导航</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>电商导航</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-list">
+							<a class="link" href="javascript:;">
+								<span>细节猎人</span>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="link" href="javascript:;">
+								<span>优设读报</span>
+							</a>
+							<ul class="sub-nav wei2">
+								<li>
+									<a href="javascript:;">
+										<span>读报首页</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>行业新闻</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>头条文章</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-list">
+							<a class="link" href="javascript:;">
+								<span>热门课程</span>
+							</a>
+							<ul class="sub-nav wei3">
+								<li>
+									<a href="javascript:;">
+										<span>优设大课堂</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>设计公开课</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-list ">
+							<a class="link current" href="javascript:;">
+								<span>UiiiUiii 教程</span>
+								<i></i>
+							</a>
+							<ul class="sub-nav wei4">
+								<li>
+									<a href="javascript:;">
+										<span>学教程</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>找灵感</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-list">
+							<a class="link" href="javascript:;">
+								<span>免费素材</span>
+							</a>
+						</li>
+						<li class="nav-list">
+							<a class="link" href="javascript:;">
+								<span>关于我们</span>
+							</a>
+							<ul class="sub-nav wei5">
+								<li>
+									<a href="javascript:;">
+										<span>文章投稿</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>广告商务</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span>意见反馈</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main auto">
+			<div class="top">
+				<h2>所有文章</h2>
+			</div>
+			<div class="content page-wrap clearifx">
+				<!-- 左侧栏 -->
+				<div class="sidebar">
+					<div class="widget sidebar_left_1">
+						<a href="javascript:;">
+							<img src="img/uisdc-qt-613.png" alt="">
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="widget sidebar-course">
+						<h3 class="widget-title">教程入门</h3>
+						<div class="cont">
+							<ul>
+								<li>
+									<a class="pic" href="javascript:;">
+										<img src="img/uiii-ps-icon.png" alt="">
+									</a>
+									<div class="right">
+										<h3><a href="javascript:;">PhotoShop</a></h3>
+										<h4><a href="javascript:;">PS新手入门</a></h4>
+										<p>设计师必学神器</p>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="javascript:;">
+										<img src="img/uiii-ai-icon.png" alt="">
+									</a>
+									<div class="right">
+										<h3><a href="javascript:;">Illustrator</a></h3>
+										<h4><a href="javascript:;">AI新手入门</a></h4>
+										<p>矢量绘图小能手</p>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="javascript:;">
+										<img src="img/uiii-ae-icon.png" alt="">
+									</a>
+									<div class="right">
+										<h3><a href="javascript:;">After Effects</a></h3>
+										<h4><a href="javascript:;">AE新手入门</a></h4>
+										<p>动效设计不再难</p>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="javascript:;">
+										<img src="img/uiii-c4d-icon.png" alt="">
+									</a>
+									<div class="right">
+										<h3><a href="javascript:;">Cinema 4D</a></h3>
+										<h4><a href="javascript:;">C4D入门</a></h4>
+										<p>2017最火软件</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="widget sidebar-tags">
+						<h3 class="widget-title">热门栏目</h3>
+						<div class="cont">
+							<a href="javascript:;">干货集合</a>
+							<a href="javascript:;">APP设计</a>
+							<a href="javascript:;">网页设计</a>
+							<a href="javascript:;">PS技巧</a>
+							<a href="javascript:;">UI设计</a>
+							<a href="javascript:;">用户体验</a>
+							<a href="javascript:;">经验分享</a>
+							<a href="javascript:;">平面设计</a>
+							<a href="javascript:;">神器推荐</a>
+							<a href="javascript:;">Logo设计</a>
+							<a href="javascript:;">酷站推荐</a>
+							<a href="javascript:;">设计师职场</a>
+							<a href="javascript:;">交互设计</a>
+							<a href="javascript:;">字体设计</a>
+							<a href="javascript:;">产品设计</a>
+							<a href="javascript:;">Web前端</a>
+							<a href="javascript:;">中文字体</a>
+							<a href="javascript:;">图库网站</a>
+							<a href="javascript:;">免费资源</a>
+							<a href="javascript:;">自学手绘</a>
+						</div>
+					</div>
+					<div class="widget sidebar_left_2">
+						<a href="javascript:;">
+							<img src="img/web-160100-1023.png" alt="">
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="widget sidebar-uiii">
+						<h3 class="widget-title">找灵感</h3>
+						<div class="cont">
+							<a href="javascript:;">
+								<i></i>
+								主编推荐
+							</a>
+							<a href="javascript:;">
+								<i></i>
+								Banner设计
+							</a>
+							<a href="javascript:;">
+								<i></i>
+								海报设计
+							</a>
+							<a href="javascript:;">
+								<i></i>
+								Logo设计
+							</a>
+							<a href="javascript:;">
+								<i></i>
+								字体设计
+							</a>
+							<a href="javascript:;">
+								<i></i>
+								UI设计
+							</a>
+						</div>
+					</div>
+					<div class="widget sidebar-recommend">
+						<h3 class="widget-title">优设推荐</h3>
+						<div class="cont">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<img src="img/uisdc-dktbanner-0501.png" alt="">
+										<div class="book-infor">
+											<p>优设零基础手绘特训班</p>
+											<p class="p1">
+												<strong>推荐：</strong>
+												超人气课程！从入门到专业
+												
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/uiii2-862-site.jpg" alt="">
+										<div class="book-infor">
+											<p>优优教程网</p>
+											<p class="p1">
+												<strong>超赞：</strong>
+												可能是国内最好的中文教程网
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/uisdc-wechat-czpic50.png" alt="">
+										<div class="book-infor">
+											<p>优设资源打包免费下载</p>
+											<p class="p1">
+												<strong>推荐：</strong>
+												设计干货合集，持续更新中
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="last">
+									<a href="javascript:;">
+										<img src="img/uisdc-lbanner-ljcok.jpg" alt="">
+										<div class="book-infor">
+											<p>优设PS、AI、AE零基础训练营</p>
+											<p class="p1">
+												<strong>推荐：</strong>
+												30天从小白到软件高手
+											</p>
+										</div>
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="widget sidebar_left_3">
+						<a href="javascript:;">
+							<img src="img/uisdc-dkt-ui0802.png" alt="">
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="widget sidebar_left_4">
+						<a href="javascript:;">
+							<img src="img/uisdc-ymbanner-121.png" alt="">
+							<div class="mask"></div>
+						</a>
+					</div>
+					<div class="widget sidebar-dubao">
+						<h3 class="widget-title">优设读报</h3>
+						<div class="cont">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<strong>01</strong>
+										<span>谷歌或将重返中国，设计师还知道怎么用吗？</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<strong>02</strong>
+										<span>谷歌发布 Android 9.0 正式版，系统命名为 Pie</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<strong>03</strong>
+										<span>微信公众平台：今日起将剔除机器等非自然阅读的虚假数据</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<strong>04</strong>
+										<span>腾讯上线「守护者计划」小程序，一键识别网络传销</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<strong>05</strong>
+										<span>OFO 又来送钱了，开启「福车红包」活动</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<strong>06</strong>
+										<span>支付宝上线「拼团」功能，价格超低</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<strong>07</strong>
+										<span>每日壁纸：华为Nova 3 官方壁纸</span>
+									</a>
+								</li>
+							</ul>
+							<a href="javascript:;" class="btn">聊设计 聊社稷</a>
+						</div>
+					</div>
+				</div>
+				<!-- 内容 -->
+				<div class="middle">
+					<!-- <div class="item">
+						<h4>
+							<a href="details.html">书名</a>
+							<span class="author">作者</span>
+						</h4>
+						<div class="text">最新版的 PS撸最骚的图。最近 PS爸爸更新了，为了能够给大家带来言简意赅、通俗好记的版本测评，我连夜下载Adobe Photoshop CC 2019，...</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+	<script src="script/json.js"></script>
+	<script src="script/list.js"></script>
+</body>
+</html>
